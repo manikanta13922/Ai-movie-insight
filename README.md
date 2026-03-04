@@ -1,5 +1,10 @@
 # AI Movie Insight Builder
 
+Live App:
+https://ai-movie-insight-snowy.vercel.app
+
+# AI Movie Insight Builder
+
 A full-stack application that fetches movie data from IMDb and analyzes audience sentiment using reviews.
 
 ## Features
