@@ -20,6 +20,11 @@ export default function Home() {
 
     const movieRes = await fetch(`/api/movie?id=${movieId}`);
     const movieData = await movieRes.json();
+    if (movieData.Response === "False") {
+      alert("Movie not found. Check IMDb ID.");
+      setLoading(false);
+      return;
+    }
     setMovie(movieData);
 
     const reviewRes = await fetch(`/api/reviews?id=${movieId}`);
